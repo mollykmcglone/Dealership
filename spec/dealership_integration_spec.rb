@@ -18,6 +18,9 @@ describe('create new Vehicle from index path', {:type => :feature}) do
     fill_in("make", :with => "Ford")
     fill_in("model", :with => "Focus")
     fill_in("year", :with => "2003")
+    fill_in("color", :with => "red")
+    fill_in("engine_size", :with => "4L")
+    fill_in("number_of_doors", :with => "4")
     click_button("add_vehicle")
     expect(page).to have_content("Success!")
   end
