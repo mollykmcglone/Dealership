@@ -20,6 +20,10 @@ class Vehicle
     @year
   end
 
+  define_method(:id) do
+    @id
+  end
+
   define_singleton_method(:all) do
     @@vehicles
   end
